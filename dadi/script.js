@@ -9,11 +9,11 @@ btnTira.addEventListener("click", function(){
     
 
     if (numComputer > numUtente){
-        console.log("Mi dispiace! Ha vinto il Computer");
+        document.getElementById("risultato").innerHTML = ("Mi dispiace! Ha vinto il Computer");
     } else if (numUtente > numComputer){
-        console.log("Complimenti! Hai vinto");
+        document.getElementById("risultato").innerHTML = ("Complimenti! Hai vinto");
     } else {
-        console.log("PAREGGIO");
+        document.getElementById("risultato").innerHTML = ("PAREGGIO");
     }
 
 });
